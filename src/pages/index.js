@@ -15,50 +15,143 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section
-			sm-padding="24 0 24 0"
-			quarkly-title="Header-5"
-			background="--color-light"
-			sm-margin="0 0 0 0"
-			sm-background="--color-light"
-		>
+		<Section quarkly-title="Header-4" sm-display="block">
 			<Override
 				slot="SectionContent"
+				display="flex"
+				flex="0 1 auto"
+				overflow-y="auto"
+				justify-content="center"
+				align-items="center"
 				flex-direction="row"
-				justify-content="space-between"
-				lg-text-align="left"
-				lg-align-self="auto"
+				sm-flex-direction="row"
+				sm-align-items="center"
+				sm-display="flex"
+				sm-flex-wrap="no-wrap"
+				sm-grid-column-gap="16px"
+				sm-overflow="hidden"
+				lg-align-items="center"
+				lg-display="flex"
+				lg-flex-direction="row"
+				lg-justify-content="center"
 			/>
 			<Box
 				display="flex"
-				justify-content="center"
+				padding="12px 0"
+				justify-content="flex-start"
 				align-items="flex-start"
 				flex-direction="row"
-				width="100%"
+				sm-width="55%"
 				sm-align-items="center"
 				sm-flex-direction="row"
 				sm-justify-content="flex-start"
-				md-justify-content="center"
-				sm-display="flex"
+				md-width="55%"
+				lg-width="70%"
+				md-justify-content="flex-start"
+				flex-wrap="no-wrap"
+				align-content="center"
+				width="60%"
 			>
-				<LinkBox
-					flex-direction="row"
-					href="/index"
-					display="flex"
-					grid-gap="12px"
-					sm-text-align="left"
-				>
+				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
 					<Text
+						margin="0"
 						md-margin="0px 0 0px 0"
 						text-align="left"
-						font="--headline1"
+						font="--headline2"
 						sm-margin="0px 0 0px 0"
 						display="block"
 						color="--red"
-						lg-text-align="left"
-						sm-text-align="center"
+						sm-font="--headline3"
 					>
-						Красный Домик
+						Рекламный Дом
+					</Text>
+				</LinkBox>
+			</Box>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="flex-start"
+				flex-direction="row"
+				width="10%"
+				sm-align-items="center"
+				sm-flex-direction="row"
+				sm-justify-content="flex-start"
+				md-width="15%"
+				lg-width="20%"
+				md-justify-content="flex-start"
+				flex-wrap="no-wrap"
+			>
+				<LinkBox flex-direction="row" href="#questions" display="flex" grid-gap="12px">
+					<Text
+						margin="0"
+						md-margin="0px 0 0px 0"
+						text-align="left"
+						font="--lead"
+						sm-margin="0px 0 0px 0"
+						display="block"
+						color="--dark"
+					>
+						Вопросы
+					</Text>
+				</LinkBox>
+			</Box>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="flex-start"
+				flex-direction="row"
+				sm-align-items="center"
+				sm-flex-direction="row"
+				sm-justify-content="flex-start"
+				lg-width="20%"
+				md-justify-content="flex-start"
+				width="10%"
+				flex-wrap="no-wrap"
+				md-width="15%"
+				sm-margin="0px 8px 0px 0px"
+			>
+				<LinkBox flex-direction="row" href="#contacts" display="flex" grid-gap="12px">
+					<Text
+						margin="0"
+						md-margin="0px 0 0px 0"
+						text-align="left"
+						font="--lead"
+						sm-margin="0px 0 0px 0"
+						display="block"
+						color="--dark"
+					>
+						Партнеры
+					</Text>
+				</LinkBox>
+			</Box>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="flex-start"
+				flex-direction="row"
+				sm-align-items="center"
+				sm-flex-direction="row"
+				sm-justify-content="flex-start"
+				lg-width="20%"
+				md-justify-content="flex-start"
+				width="10%"
+				flex-wrap="no-wrap"
+				md-width="15%"
+			>
+				<LinkBox flex-direction="row" href="#contacts" display="flex" grid-gap="12px">
+					<Text
+						margin="0"
+						md-margin="0px 0 0px 0"
+						text-align="left"
+						font="--lead"
+						sm-margin="0px 0 0px 0"
+						display="block"
+						color="--dark"
+					>
+						Контакты
 					</Text>
 				</LinkBox>
 			</Box>
@@ -634,7 +727,7 @@ export default (() => {
 				md-width="100%"
 				color="--darkL1"
 			>
-				Лучшее оборудование,{" "}
+				Лучшее оборудование
 				<br />
 				безупречное качество{" "}
 			</Text>
@@ -822,7 +915,7 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section padding="90px 0 100px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/643d8e6ebf72b300207d7233/images/blurred-premium-violet-color-abstract-wallpaper.jpg?v=2023-04-27T14:14:02.129Z) 0% 0% /cover repeat scroll padding-box" quarkly-title="Reviews-4">
+		<Section padding="90px 0 100px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/643d8e6ebf72b300207d7233/images/blurred-premium-violet-color-abstract-wallpaper.jpg?v=2023-04-27T14:14:02.129Z) 0% 0% /cover repeat scroll padding-box" quarkly-title="Reviews-4" id="otziv">
 			<Text margin="0px 0px 70px 0px" font="--headline2" text-align="center" md-margin="0px 0px 50px 0px">
 				О нас говорят
 			</Text>
@@ -1245,8 +1338,8 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="60px 0" sm-padding="40px 0" color="--dark">
-			<Text as="h1" font="--headline1" margin="0 0 24px 0">
+		<Section padding="60px 0" sm-padding="40px 0" color="--dark" id="questions">
+			<Text as="h1" font="--headline1" margin="0 0 36px 0">
 				Часто задаваемые вопросы
 			</Text>
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
@@ -1448,7 +1541,13 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section background="--color-darkL1" padding="40px 0 40px 0" sm-margin="0 0 0 0" sm-padding="60px 0 60px 0">
+		<Section
+			background="--color-darkL1"
+			padding="40px 0 40px 0"
+			sm-margin="0 0 0 0"
+			sm-padding="60px 0 60px 0"
+			id="contacts"
+		>
 			<Box
 				display="flex"
 				align-items="center"
@@ -1623,7 +1722,7 @@ export default (() => {
 					user-select="auto"
 					pointer-events="auto"
 				>
-					Рекламное агентство "Красный Домик"{" "}
+					Рекламное агентство "Рекламный Дом"{" "}
 					<br />
 					Полный спектр рекламы для вашего успеха
 				</Strong>
