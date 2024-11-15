@@ -29,7 +29,7 @@ export default (() => {
 				sm-display="flex"
 				sm-flex-wrap="no-wrap"
 				sm-grid-column-gap="16px"
-				sm-overflow="hidden"
+				sm-overflow="visible"
 				lg-align-items="center"
 				lg-display="flex"
 				lg-flex-direction="row"
@@ -112,8 +112,13 @@ export default (() => {
 				flex-wrap="no-wrap"
 				md-width="15%"
 				sm-margin="0px 8px 0px 0px"
+				sm-flex="0 1 auto"
+				sm-overflow-x="visible"
+				sm-overflow-y="visible"
+				sm-overflow="visible"
+				sm-display="none"
 			>
-				<LinkBox flex-direction="row" href="#contacts" display="flex" grid-gap="12px">
+				<LinkBox flex-direction="row" href="#partners" display="flex" grid-gap="12px">
 					<Text
 						margin="0"
 						md-margin="0px 0 0px 0"
@@ -157,8 +162,21 @@ export default (() => {
 				</LinkBox>
 			</Box>
 		</Section>
-		<Section overflow-x="hidden" overflow-y="hidden" quarkly-title="Hero-6" sm-padding="0 0 24px 0">
-			<Override slot="SectionContent" width="100%" flex="1 1 0%" max-width="100%" />
+		<Section
+			overflow-x="hidden"
+			overflow-y="hidden"
+			quarkly-title="Hero-6"
+			sm-padding="0 0 24px 0"
+			margin="0 24 0 0"
+		>
+			<Override
+				slot="SectionContent"
+				width="100%"
+				flex="1 1 0%"
+				max-width="100%"
+				margin="0px 48px 0px 0px"
+				lg-margin="0px 0 0px 0px"
+			/>
 			<Box
 				min-width="100px"
 				min-height="100px"
@@ -180,7 +198,7 @@ export default (() => {
 					<Text margin="0px 0px 20px 0px" font="--headline1" sm-font="--headline2">
 						Полный спектр рекламы для вашего успеха
 					</Text>
-					<Text margin="20px 0px 20px 0px" font="--headline3" sm-margin="20px 0px 20px 0px">
+					<Text margin="60px 0px 60px 0px" font="--headline3" sm-margin="20px 0px 20px 0px">
 						Креативные сувениры, стильная полиграфия и эффективная реклама — вот, что мы предлагаем. Наши решения работают на ваш имидж. Поднимите ваш бренд на новый уровень с нашей помощью.
 					</Text>
 					<Box
@@ -275,14 +293,23 @@ export default (() => {
 					sm-align-self="auto"
 					sm-width="100%"
 					sm-padding="0px 0px 40px 0px"
+					align-items="center"
+					flex-direction="row"
+					justify-content="center"
+					overflow="hidden"
+					border-radius="128px"
 				>
 					<Image
 						src="https://uploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18:31:47.551Z"
 						display="block"
 						max-width="100%"
-						object-fit="cover"
+						object-fit="fill"
 						border-radius="64px"
 						margin="0px 0px 15px 0px"
+						sm-overflow="hidden"
+						sm-overflow-x="auto"
+						sm-overflow-y="auto"
+						overflow="hidden"
 						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18%3A31%3A47.551Z&quality=85&w=3200 3200w"
 						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 					/>
@@ -727,6 +754,7 @@ export default (() => {
 				lg-width="70%"
 				md-width="100%"
 				color="--darkL1"
+				sm-font="--headline2"
 			>
 				Лучшее оборудование
 				<br />
@@ -833,7 +861,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="80px 0 90px 0" background="--color-dark" quarkly-title="Partners-4">
+		<Section padding="80px 0 90px 0" background="--color-dark" quarkly-title="Partners-4" id="partners">
 			<Box
 				min-width="100px"
 				min-height="100px"
@@ -853,7 +881,13 @@ export default (() => {
 				>
 					Мы гордимся сотрудничеством с ведущими брендами в сфере канцелярии и одежды. Наши партнеры — это признанные лидеры, которые доверяют нам производство и брендирование своей продукции. Благодаря этому мы гарантируем высокое качество, стильный дизайн и надежность изделий, соответствующих стандартам мировых компаний.{"\n\n"}
 				</Text>
-				<Text margin="0px 0px 0px 0px" color="--light" font="--headline1" md-order="-1">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--light"
+					font="--headline1"
+					md-order="-1"
+					sm-font="--headline2"
+				>
 					Наши партнеры
 				</Text>
 			</Box>
@@ -1340,7 +1374,7 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section padding="60px 0" sm-padding="40px 0" color="--dark" id="questions">
-			<Text as="h1" font="--headline1" margin="0 0 36px 0">
+			<Text as="h1" font="--headline1" margin="0 0 36px 0" sm-font="--headline2">
 				Часто задаваемые вопросы
 			</Text>
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
@@ -1352,7 +1386,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Мы предлагаем широкий спектр технологий нанесения: от вышивки и трафаретной печати до УФ-печати, гравировки, термотрансфера, тиснения, деколи и других. Подберем оптимальный метод для любого материала.{"\n\n"}
 						</Text>
 					</Box>
@@ -1365,7 +1399,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Мы работаем с текстилем, пластиком, деревом, металлом, кожей, стеклом, бумагой, картоном и керамикой. Также доступны уникальные материалы, такие как камень и ПВХ.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1390,7 +1424,7 @@ export default (() => {
 								<br />
 							</Strong>
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Да, мы выполняем заказы от небольших партий до крупных тиражей. Минимальное количество зависит от типа нанесения и продукции.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1416,7 +1450,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Сроки зависят от объема и сложности заказа. Для срочных проектов у нас есть услуга нанесения за 24 часа.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1442,7 +1476,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Да, мы можем нанести ваш логотип или изображение на предоставленные вами изделия, если они подходят для выбранной технологии.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1469,7 +1503,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Да, мы сотрудничаем с ведущими мировыми брендами канцелярии, одежды и аксессуаров, гарантируя высочайшее качество продукции.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1483,7 +1517,7 @@ export default (() => {
 							<br />
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Нам понадобятся макеты в векторных форматах (например, AI, EPS, PDF). При необходимости мы поможем адаптировать или создать дизайн.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1509,7 +1543,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Да, мы предлагаем доставку по всей стране. Также возможен самовывоз из нашего офиса или склада.{"\n\n\n\n"}
 						</Text>
 					</Box>
@@ -1535,7 +1569,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--greyD2">
+						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
 							Да, мы предоставляем образцы продукции и вариантов нанесения, чтобы вы могли оценить качество перед подтверждением заказа.{"\n\n\n\n"}
 						</Text>
 					</Box>
