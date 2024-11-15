@@ -50,7 +50,8 @@ export default (() => {
 				md-justify-content="flex-start"
 				flex-wrap="no-wrap"
 				align-content="center"
-				width="60%"
+				width="70%"
+				overflow="hidden"
 			>
 				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
 					<Text
@@ -1569,6 +1570,17 @@ export default (() => {
 					Свяжитесь с нами, чтобы узнать точные цены!
 				</Text>
 				<Link
+					href="tel:+79385305730"
+					text-align="center"
+					color="--light"
+					font="--headline3"
+					text-decoration-line="underline"
+					margin="0px 0px 16px 0px"
+					target="_blank"
+				>
+					+7 (938) 530-57-30
+				</Link>
+				<Link
 					href="mailto:blank?rekdomik@gmail.com"
 					text-align="center"
 					color="--light"
@@ -1587,17 +1599,6 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 				>
 					rd.ooo@bk.ru
-				</Link>
-				<Link
-					href="tel:+79385305730"
-					text-align="center"
-					color="--light"
-					font="--headline3"
-					text-decoration-line="underline"
-					margin="0px 0px 16px 0px"
-					target="_blank"
-				>
-					+7 (938) 530-57-30
 				</Link>
 				<Text margin="0px 0px 0 0px" font="--headline3" color="--light" text-align="center">
 					<Link href="https://yandex.com/maps/-/CDtW4YmJ" color="#ffffff" font="--headline3" target="_blank">
