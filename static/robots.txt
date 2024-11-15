@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap-index.xml
+Sitemap: https://glittery-florentine-4946c0.netlify.app/sitemap-index.xml
