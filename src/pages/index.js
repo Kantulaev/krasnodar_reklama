@@ -10,9 +10,10 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Рекламный Дом
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Полный спектр рекламы для вашего успеха.Креативные сувениры, стильная полиграфия и эффективная реклама — вот, что мы предлагаем. Наши решения работают на ваш имидж. Поднимите ваш бренд на новый уровень с нашей помощью."} />
+			<meta property={"og:description"} content={"Полный спектр рекламы для вашего успеха.Креативные сувениры, стильная полиграфия и эффективная реклама — вот, что мы предлагаем. Наши решения работают на ваш имидж. Поднимите ваш бренд на новый уровень с нашей помощью."} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section quarkly-title="Header-4" sm-display="block">
@@ -28,12 +29,14 @@ export default (() => {
 				sm-align-items="center"
 				sm-display="flex"
 				sm-flex-wrap="no-wrap"
-				sm-grid-column-gap="16px"
 				sm-overflow="visible"
 				lg-align-items="center"
 				lg-display="flex"
 				lg-flex-direction="row"
 				lg-justify-content="center"
+				sm-overflow-y="visible"
+				sm-justify-content="center"
+				sm-grid-column-gap="32px"
 			/>
 			<Box
 				display="flex"
@@ -41,17 +44,19 @@ export default (() => {
 				justify-content="flex-start"
 				align-items="flex-start"
 				flex-direction="row"
-				sm-width="55%"
 				sm-align-items="center"
 				sm-flex-direction="row"
 				sm-justify-content="flex-start"
-				md-width="55%"
+				md-width="70%"
 				lg-width="70%"
 				md-justify-content="flex-start"
 				flex-wrap="no-wrap"
 				align-content="center"
 				width="70%"
 				overflow="hidden"
+				sm-display="flex"
+				sm-overflow="visible"
+				sm-width="85%"
 			>
 				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
 					<Text
@@ -82,6 +87,7 @@ export default (() => {
 				lg-width="20%"
 				md-justify-content="flex-start"
 				flex-wrap="no-wrap"
+				sm-display="none"
 			>
 				<LinkBox flex-direction="row" href="#questions" display="flex" grid-gap="12px">
 					<Text
@@ -105,7 +111,7 @@ export default (() => {
 				flex-direction="row"
 				sm-align-items="center"
 				sm-flex-direction="row"
-				sm-justify-content="flex-start"
+				sm-justify-content="center"
 				lg-width="20%"
 				md-justify-content="flex-start"
 				width="10%"
@@ -117,6 +123,7 @@ export default (() => {
 				sm-overflow-y="visible"
 				sm-overflow="visible"
 				sm-display="none"
+				md-display="none"
 			>
 				<LinkBox flex-direction="row" href="#partners" display="flex" grid-gap="12px">
 					<Text
@@ -140,12 +147,14 @@ export default (() => {
 				flex-direction="row"
 				sm-align-items="center"
 				sm-flex-direction="row"
-				sm-justify-content="flex-start"
+				sm-justify-content="center"
 				lg-width="20%"
 				md-justify-content="flex-start"
 				width="10%"
 				flex-wrap="no-wrap"
 				md-width="15%"
+				sm-display="flex"
+				sm-margin="0px 16px 0px 0px"
 			>
 				<LinkBox flex-direction="row" href="#contacts" display="flex" grid-gap="12px">
 					<Text
@@ -174,7 +183,6 @@ export default (() => {
 				width="100%"
 				flex="1 1 0%"
 				max-width="100%"
-				margin="0px 48px 0px 0px"
 				lg-margin="0px 0 0px 0px"
 			/>
 			<Box
@@ -184,6 +192,8 @@ export default (() => {
 				position="static"
 				lg-flex-direction="column"
 				border-color="#04080C"
+				lg-display="flex"
+				lg-flex-wrap="no-wrap"
 			>
 				<Box
 					min-width="100px"
@@ -281,31 +291,29 @@ export default (() => {
 					display="flex"
 					position="static"
 					bottom="-298px"
-					height="900px"
 					left="614px"
 					right="-52px"
 					top="-28px"
 					flex="1 1 0%"
-					lg-margin="0px 0 0px 0px"
 					lg-align-self="center"
-					lg-padding="0px 0px 80px 0px"
 					sm-flex="1 1 0%"
 					sm-align-self="auto"
-					sm-width="100%"
-					sm-padding="0px 0px 40px 0px"
 					align-items="center"
 					flex-direction="row"
 					justify-content="center"
 					overflow="hidden"
-					border-radius="128px"
+					border-radius="128px 0px 0px 128px"
+					width="45%"
+					flex-wrap="no-wrap"
+					height="900px"
+					lg-width="100%"
+					lg-border-radius="128px"
 				>
 					<Image
 						src="https://uploads.quarkly.io/673219af9710450018a442af/images/Designer%20%2812%29%20%281%29.jpeg?v=2024-11-15T18:31:47.551Z"
 						display="block"
 						max-width="100%"
 						object-fit="fill"
-						border-radius="64px"
-						margin="0px 0px 15px 0px"
 						sm-overflow="hidden"
 						sm-overflow-x="auto"
 						sm-overflow-y="auto"
