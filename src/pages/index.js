@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, LinkBox, Box, Section, Icon, Span, Button, Image, Strong, Hr } from "@quarkly/widgets";
+import { Theme, Link, Text, LinkBox, Box, Section, Icon, Span, Button, Image, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -10,11 +10,19 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Рекламный Дом
+				Рекламный Дом. Рекламное агентство полного спектра.
 			</title>
 			<meta name={"description"} content={"Полный спектр рекламы для вашего успеха.Креативные сувениры, стильная полиграфия и эффективная реклама — вот, что мы предлагаем. Наши решения работают на ваш имидж. Поднимите ваш бренд на новый уровень с нашей помощью."} />
+			<meta property={"og:title"} content={"Рекламный Дом. Рекламное агентство полного спектра."} />
 			<meta property={"og:description"} content={"Полный спектр рекламы для вашего успеха.Креативные сувениры, стильная полиграфия и эффективная реклама — вот, что мы предлагаем. Наши решения работают на ваш имидж. Поднимите ваш бренд на новый уровень с нашей помощью."} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/673219af9710450018a442af/images/Remove-bg.ai_1731943634635.png?v=2024-11-18T15:36:56.810Z"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/673219af9710450018a442af/images/favicon-16x16.png?v=2024-11-18T15:34:39.185Z"} type={"image/x-icon"} />
+			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/673219af9710450018a442af/images/apple-touch-icon.png?v=2024-11-18T15:34:39.189Z"} />
+			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/673219af9710450018a442af/images/apple-touch-icon.png?v=2024-11-18T15:34:39.189Z"} />
+			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/673219af9710450018a442af/images/apple-touch-icon.png?v=2024-11-18T15:34:39.189Z"} />
+			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/673219af9710450018a442af/images/apple-touch-icon.png?v=2024-11-18T15:34:39.189Z"} />
+			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/673219af9710450018a442af/images/android-chrome-512x512.png?v=2024-11-18T15:34:39.197Z"} />
+			<meta name={"msapplication-TileColor"} content={"#ff0000"} />
 		</Helmet>
 		<Section quarkly-title="Header-4" sm-display="block">
 			<Override
@@ -79,72 +87,6 @@ export default (() => {
 				justify-content="space-between"
 				align-items="flex-start"
 				flex-direction="row"
-				width="10%"
-				sm-align-items="center"
-				sm-flex-direction="row"
-				sm-justify-content="flex-start"
-				md-width="15%"
-				lg-width="20%"
-				md-justify-content="flex-start"
-				flex-wrap="no-wrap"
-				sm-display="none"
-			>
-				<LinkBox flex-direction="row" href="#questions" display="flex" grid-gap="12px">
-					<Text
-						margin="0"
-						md-margin="0px 0 0px 0"
-						text-align="left"
-						font="--lead"
-						sm-margin="0px 0 0px 0"
-						display="block"
-						color="--dark"
-					>
-						Вопросы
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				display="flex"
-				padding="12px 0"
-				justify-content="space-between"
-				align-items="flex-start"
-				flex-direction="row"
-				sm-align-items="center"
-				sm-flex-direction="row"
-				sm-justify-content="center"
-				lg-width="20%"
-				md-justify-content="flex-start"
-				width="10%"
-				flex-wrap="no-wrap"
-				md-width="15%"
-				sm-margin="0px 8px 0px 0px"
-				sm-flex="0 1 auto"
-				sm-overflow-x="visible"
-				sm-overflow-y="visible"
-				sm-overflow="visible"
-				sm-display="none"
-				md-display="none"
-			>
-				<LinkBox flex-direction="row" href="#partners" display="flex" grid-gap="12px">
-					<Text
-						margin="0"
-						md-margin="0px 0 0px 0"
-						text-align="left"
-						font="--lead"
-						sm-margin="0px 0 0px 0"
-						display="block"
-						color="--dark"
-					>
-						Партнеры
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				display="flex"
-				padding="12px 0"
-				justify-content="space-between"
-				align-items="flex-start"
-				flex-direction="row"
 				sm-align-items="center"
 				sm-flex-direction="row"
 				sm-justify-content="center"
@@ -161,10 +103,11 @@ export default (() => {
 						margin="0"
 						md-margin="0px 0 0px 0"
 						text-align="left"
-						font="--lead"
+						font="--headline3"
 						sm-margin="0px 0 0px 0"
 						display="block"
 						color="--dark"
+						sm-font="--lead"
 					>
 						Контакты
 					</Text>
@@ -378,7 +321,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15:49:20.362Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14:49:05.076Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -387,7 +330,7 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/a4fd36d1d791d1c7af89d96a23a3%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.362Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
@@ -429,7 +372,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15:49:20.369Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14:49:05.071Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -438,7 +381,7 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/64af5735ea8abc6d1e719a4258a4%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.369Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
@@ -481,7 +424,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15:49:20.375Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14:49:05.066Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -490,7 +433,7 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5070aee2c215dce89006675880a7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.375Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
@@ -532,7 +475,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15:49:20.377Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14:49:05.062Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -541,7 +484,7 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/acdafc54804b0b5bd4d496131ef7%20%281%29.jpg?v=2024-11-11T15%3A49%3A20.377Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
@@ -753,478 +696,8 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section padding="80px 0 90px 0" quarkly-title="Product-5">
-			<Override slot="SectionContent" align-items="center" />
-			<Text
-				margin="0px 0px 20px 0px"
-				font="--headline1"
-				text-align="center"
-				lg-width="70%"
-				md-width="100%"
-				color="--darkL1"
-				sm-font="--headline2"
-			>
-				Лучшее оборудование
-				<br />
-				безупречное качество{" "}
-			</Text>
-			<Text
-				margin="0px 0px 20px 0px"
-				text-align="center"
-				font="normal 500 28px/1.2 --fontFamily-sans"
-				color="--darkL1"
-				padding="0px 280px 0px 280px"
-				lg-padding="0px 0 0px 0"
-				lg-margin="0px 0px 50px 0px"
-			>
-				Делаем ваш бренд ярким и долговечным!
-			</Text>
-			<Hr
-				min-height="10px"
-				margin="0px 0px 50px 0px"
-				border-color="--color-darkL1"
-				width="40px"
-				border-width="2px 0 0 0"
-			/>
-			<Box
-				min-width="100px"
-				min-height="100px"
-				display="grid"
-				grid-template-columns="repeat(3, 1fr)"
-				grid-template-rows="auto"
-				grid-gap="0 35px"
-				md-grid-template-columns="1fr"
-				md-grid-gap="40px 0"
-				margin="0px 0px 70px 0px"
-				md-margin="0px 0px 50px 0px"
-			>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-				>
-					<Image
-						src="https://uploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16:42:53.789Z"
-						display="block"
-						max-width="100%"
-						margin="0px 0px 25px 0px"
-						object-fit="cover"
-						sm-height="350px"
-						height="600px"
-						lg-height="400px"
-						md-width="100%"
-						md-height="450px"
-						border-radius="64px"
-						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/f97748e0da64237faf12.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.789Z&quality=85&w=3200 3200w"
-						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-				>
-					<Image
-						src="https://uploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16:42:53.841Z"
-						display="block"
-						max-width="100%"
-						margin="0px 0px 25px 0px"
-						object-fit="cover"
-						sm-height="350px"
-						height="600px"
-						lg-height="400px"
-						md-width="100%"
-						md-height="450px"
-						border-radius="64px"
-						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/1f0168138d330f10f551.%20%281%29.jpg?v=2024-11-11T16%3A42%3A53.841Z&quality=85&w=3200 3200w"
-						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-				>
-					<Image
-						src="https://uploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16:43:52.959Z"
-						display="block"
-						max-width="100%"
-						margin="0px 0px 25px 0px"
-						object-fit="cover"
-						sm-height="350px"
-						height="600px"
-						lg-height="400px"
-						md-width="100%"
-						md-height="450px"
-						border-radius="64px"
-						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5011fa46d218c90fa133.%20%281%29.jpg?v=2024-11-11T16%3A43%3A52.959Z&quality=85&w=3200 3200w"
-						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-			</Box>
-		</Section>
-		<Section padding="80px 0 90px 0" background="--color-dark" quarkly-title="Partners-4" id="partners">
-			<Box
-				min-width="100px"
-				min-height="100px"
-				display="flex"
-				margin="0px 0px 70px 0px"
-				justify-content="space-between"
-				md-flex-direction="column"
-			>
-				<Text
-					margin="10px 70px 0px 0px"
-					color="--light"
-					width="60%"
-					font="--lead"
-					lg-width="45%"
-					md-width="100%"
-					md-margin="20px 0 10px 0px"
-				>
-					Мы гордимся сотрудничеством с ведущими брендами в сфере канцелярии и одежды. Наши партнеры — это признанные лидеры, которые доверяют нам производство и брендирование своей продукции. Благодаря этому мы гарантируем высокое качество, стильный дизайн и надежность изделий, соответствующих стандартам мировых компаний.{"\n\n"}
-				</Text>
-				<Text
-					margin="0px 0px 0px 0px"
-					color="--light"
-					font="--headline1"
-					md-order="-1"
-					sm-font="--headline2"
-				>
-					Наши партнеры
-				</Text>
-			</Box>
-			<Box
-				display="flex"
-				text-align="center"
-				grid-gap="12px 24px"
-				lg-grid-template-columns="repeat(3, 1fr)"
-				lg-grid-gap="36px 24px"
-				sm-grid-template-columns="repeat(2, 1fr)"
-				flex-wrap="wrap"
-				justify-content="space-between"
-				sm-flex-direction="column"
-				sm-align-items="flex-start"
-				sm-display="grid"
-				overflow="visible"
-				grid-row-gap="24px"
-			>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Waterline{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Zippo{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Prodir{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					UMA{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Michael Kors{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Varvara{"\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Lamy{"\n\n\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Rivacase
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Xiaomi{"\n\n\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Rombica{"\n\n\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Moleskine{"\n\n\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Fossil{"\n\n\n\n"}
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Baldinini
-				</Text>
-				<Text margin="0px 30px 0px 0px" color="--light" font="--headline3" white-space="nowrap">
-					Chinelli
-				</Text>
-			</Box>
-		</Section>
-		<Section padding="90px 0 100px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/643d8e6ebf72b300207d7233/images/blurred-premium-violet-color-abstract-wallpaper.jpg?v=2023-04-27T14:14:02.129Z) 0% 0% /cover repeat scroll padding-box" quarkly-title="Reviews-4" id="otziv">
-			<Text margin="0px 0px 70px 0px" font="--headline2" text-align="center" md-margin="0px 0px 50px 0px">
-				О нас говорят
-			</Text>
-			<Box min-width="100px" min-height="100px" display="flex" lg-flex-direction="column">
-				<Box
-					min-width="100px"
-					min-height="100px"
-					width="25%"
-					lg-width="100%"
-					lg-display="flex"
-					md-flex-direction="column"
-					flex-direction="column"
-					lg-flex-direction="row"
-				>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 25px 0px"
-						sm-padding="20px 15px 20px 15px"
-						margin="0px 5px 25px 0px"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Работаем с этим агентством уже несколько лет, и всегда остаёмся довольны! Ребята знают, как создать качественные сувениры и рекламные материалы. Всегда соблюдают сроки и понимают, что нужно нашему бренду.
-							</Text>
-						</Box>
-					</Box>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 25px 0px"
-						sm-padding="20px 15px 20px 15px"
-						margin="0px 5px 25px 0px"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Лучшая команда, с которой мне доводилось работать! Помогли с дизайном, предложили интересные решения и сделали всё оперативно. Всем рекомендую.
-							</Text>
-						</Box>
-					</Box>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 25px 0px"
-						sm-padding="20px 15px 20px 15px"
-						margin="0px 5px 25px 0px"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Заказывали сувениры для выставки, и всё получилось именно так, как мы хотели. Отличное качество, дизайн на высоте, а главное — вовремя! Спасибо за профессионализм.
-							</Text>
-						</Box>
-					</Box>
-				</Box>
-				<Box min-width="100px" min-height="100px" width="50%" lg-width="100%">
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="30px 0 10px 0"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						margin="0px 20px 25px 20px"
-						display="flex"
-						flex-direction="column"
-						justify-content="space-between"
-						lg-margin="0px 0 25px 0px"
-						md-padding="20px 0 10px 0"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text
-								margin="0px 0px 28px 0px"
-								font="--lead"
-								color="--darkL1"
-								padding="0px 30px 0px 30px"
-								md-padding="0px 20px 0px 20px"
-								md-margin="0px 0px 25px 0px"
-							>
-								Понравилось, что учли все наши пожелания и предложили отличные идеи, о которых мы даже не думали. Отзывы от клиентов очень положительные, так что агентство нас не подвело.
-							</Text>
-						</Box>
-					</Box>
-					<Box
-						min-width="100px"
-						display="grid"
-						grid-template-columns="repeat(2, 1fr)"
-						grid-template-rows="repeat(2, 1fr)"
-						md-grid-template-columns="1fr"
-						md-grid-template-rows="auto"
-						min-height="100px"
-					>
-						<Box
-							min-width="100px"
-							min-height="100px"
-							padding="20px 20px 20px 20px"
-							background="#f3f3f7"
-							border-radius="8px"
-							box-shadow="--m"
-							margin="0px 12px 25px 20px"
-							display="flex"
-							flex-direction="column"
-							lg-margin="0px 10px 25px 0px"
-							sm-margin="0px 0 25px 0px"
-							md-margin="0px 0 25px 0px"
-							justify-content="space-between"
-						>
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Команда смогла сделать невозможное — реализовали проект всего за 3 дня! Сувениры получились яркие и качественные, что привлекло много внимания к нашему бренду.
-							</Text>
-						</Box>
-						<Box
-							min-width="100px"
-							min-height="100px"
-							padding="20px 20px 20px 20px"
-							background="#f3f3f7"
-							border-radius="8px"
-							box-shadow="--m"
-							margin="0px 12px 25px 20px"
-							display="flex"
-							flex-direction="column"
-							lg-margin="0px 10px 25px 0px"
-							sm-margin="0px 0 25px 0px"
-							md-margin="0px 0 25px 0px"
-							justify-content="space-between"
-						>
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Работали с разными агентствами, но это — лучший опыт. Все выполнено в срок, качество продукции отменное, и цены приятно удивили. Обязательно обратимся снова.
-							</Text>
-						</Box>
-						<Box
-							min-width="100px"
-							min-height="100px"
-							padding="20px 20px 20px 20px"
-							background="#f3f3f7"
-							border-radius="8px"
-							box-shadow="--m"
-							margin="0px 12px 25px 20px"
-							display="flex"
-							flex-direction="column"
-							lg-margin="0px 10px 25px 0px"
-							sm-margin="0px 0 25px 0px"
-							md-margin="0px 0 25px 0px"
-							justify-content="space-between"
-						>
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Огромное спасибо за индивидуальный подход и внимание к деталям. Каждый этап был под контролем, а сотрудники всегда на связи. Агентство, которому можно доверять!"
-							</Text>
-						</Box>
-						<Box
-							min-width="100px"
-							min-height="100px"
-							padding="20px 20px 20px 20px"
-							background="#f3f3f7"
-							border-radius="8px"
-							box-shadow="--m"
-							margin="0px 12px 25px 20px"
-							display="flex"
-							flex-direction="column"
-							lg-margin="0px 10px 25px 0px"
-							sm-margin="0px 0 25px 0px"
-							md-margin="0px 0 25px 0px"
-							justify-content="space-between"
-						>
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Очень довольны сотрудничеством! Получили нужный результат даже раньше срока, а качество на высоте. Заказали партию сувениров, и уже знаем, к кому обратимся в следующий раз.
-							</Text>
-						</Box>
-					</Box>
-				</Box>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					width="25%"
-					lg-width="100%"
-					lg-display="flex"
-					md-flex-direction="column"
-				>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						margin="0px 0 25px 5px"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 0 0px"
-						sm-padding="20px 15px 20px 15px"
-						md-margin="0 0 25px 0"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Отличное агентство! Заказывали у них полиграфию и рекламные материалы для открытия нового филиала. Всё получилось очень стильно и привлекательно, прямо как хотели. Рады, что обратились именно к ним!
-							</Text>
-						</Box>
-					</Box>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						margin="0px 0 25px 5px"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 0 0px"
-						sm-padding="20px 15px 20px 15px"
-						md-margin="0 0 25px 0"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								С этим агентством можно быть спокойным за результат. Заказывали у них сувениры и брендированные аксессуары для партнёров — всё выполнено качественно, аккуратно, и наши партнёры остались довольны.
-							</Text>
-						</Box>
-					</Box>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						padding="20px 20px 20px 20px"
-						background="#f3f3f7"
-						border-radius="8px"
-						box-shadow="--m"
-						margin="0px 0 25px 5px"
-						display="flex"
-						flex-direction="column"
-						lg-margin="0px 0 0 0px"
-						sm-padding="20px 15px 20px 15px"
-						md-margin="0 0 25px 0"
-						justify-content="space-between"
-					>
-						<Box min-width="100px" min-height="100px">
-							<Text margin="0px 0px 18px 0px" font="--lead" color="--darkL1">
-								Очень приятно работать с профессионалами, которые знают своё дело. Ребята предложили интересные идеи и сделали продукцию, которую хочется использовать каждый день. Спасибо за креативность и внимание!
-							</Text>
-						</Box>
-					</Box>
-				</Box>
-			</Box>
-		</Section>
-		<Section padding="60px 0 60px 0" lg-padding="80px 0 90px 0" quarkly-title="Stages/Steps-2" background="--color-darkL1">
-			<Text margin="0px 0px 40px 0px" font="--headline2" color="--light">
+		<Section padding="60px 0 60px 0" lg-padding="80px 0 90px 0" quarkly-title="Stages/Steps-2" background="--color-light">
+			<Text margin="0px 0px 40px 0px" font="--headline2" color="--darkL1" border-color="--color-darkL1">
 				Как мы работаем с клиентами
 			</Text>
 			<Box
@@ -1261,7 +734,7 @@ export default (() => {
 						</Text>
 					</Box>
 					<Box min-width="100px" min-height="100px" margin="0px 0px 0px 25px">
-						<Text margin="0px 0px 15px 0px" border-color="--color-light" color="--light" font="--headline3">
+						<Text margin="0px 0px 15px 0px" border-color="--color-light" color="--darkL1" font="--headline3">
 							<Strong>
 								Обсуждение{" "}
 								<br />
@@ -1269,7 +742,7 @@ export default (() => {
 							</Strong>
 							{"\n\n"}
 						</Text>
-						<Text margin="0px 0px 0px 0px" font="--lead" color="#bbc4cd">
+						<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
 							Мы изучаем ваши потребности, помогаем выбрать подходящие материалы, технологии нанесения и создаем концепцию брендирования.{"\n\n"}
 						</Text>
 					</Box>
@@ -1298,13 +771,13 @@ export default (() => {
 					</Box>
 					<Box min-width="100px" min-height="100px" margin="0px 0px 0px 25px">
 						<Text margin="0px 0px 15px 0px" border-color="--color-light" color="--light" font="--headline3">
-							<Strong>
+							<Strong color="--darkL1">
 								Подготовка макетов
 							</Strong>
 							<br />
 							{"\n\n"}
 						</Text>
-						<Text margin="0px 0px 0px 0px" font="--lead" color="#bbc4cd">
+						<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
 							Наши дизайнеры разрабатывают или адаптируют макеты под выбранный способ нанесения. Вы получаете на согласование готовые визуализации.{"\n\n"}
 						</Text>
 					</Box>
@@ -1333,13 +806,13 @@ export default (() => {
 					</Box>
 					<Box min-width="100px" min-height="100px" margin="0px 0px 0px 25px">
 						<Text margin="0px 0px 15px 0px" border-color="--color-light" color="--light" font="--headline3">
-							<Strong>
+							<Strong color="--darkL1">
 								Производство
 							</Strong>
 							<br />
 							{"\n\n"}
 						</Text>
-						<Text margin="0px 0px 0px 0px" font="--lead" color="#bbc4cd">
+						<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
 							После утверждения макета мы приступаем к работе. Используя современное оборудование, мы обеспечиваем высокое качество и точное соблюдение сроков.{"\n\n"}
 						</Text>
 					</Box>
@@ -1368,217 +841,14 @@ export default (() => {
 					</Box>
 					<Box min-width="100px" min-height="100px" margin="0px 0px 0px 25px">
 						<Text margin="0px 0px 15px 0px" border-color="--color-light" color="--light" font="--headline3">
-							<Strong>
+							<Strong color="--darkL1">
 								Доставка и поддержка
 							</Strong>
 							<br />
 							{"\n\n"}
 						</Text>
-						<Text margin="0px 0px 0px 0px" font="--lead" color="#bbc4cd">
+						<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
 							Мы организуем доставку продукции или готовим её к самовывозу. Остаемся на связи для обсуждения повторных заказов или новых проектов.{"\n\n"}
-						</Text>
-					</Box>
-				</Box>
-			</Box>
-		</Section>
-		<Section padding="60px 0" sm-padding="40px 0" color="--dark" id="questions">
-			<Text as="h1" font="--headline1" margin="0 0 36px 0" sm-font="--headline2">
-				Часто задаваемые вопросы
-			</Text>
-			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong>
-								1. Какие виды нанесения вы предлагаете?
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Мы предлагаем широкий спектр технологий нанесения: от вышивки и трафаретной печати до УФ-печати, гравировки, термотрансфера, тиснения, деколи и других. Подберем оптимальный метод для любого материала.{"\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong>
-								2. Какие материалы вы используете для брендирования?
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Мы работаем с текстилем, пластиком, деревом, металлом, кожей, стеклом, бумагой, картоном и керамикой. Также доступны уникальные материалы, такие как камень и ПВХ.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								{"\n"}
-								<Strong>
-									3. Можно ли заказать небольшую партию продукции?
-								</Strong>
-								<br />
-							</Strong>
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Да, мы выполняем заказы от небольших партий до крупных тиражей. Минимальное количество зависит от типа нанесения и продукции.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								{"\n"}
-								<Strong>
-									4. Как быстро вы выполняете заказы?
-								</Strong>
-								{"\n\n"}
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Сроки зависят от объема и сложности заказа. Для срочных проектов у нас есть услуга нанесения за 24 часа.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								{"\n"}
-								<Strong>
-									5. Могу ли я заказать брендирование на своих материалах?
-								</Strong>
-								{"\n\n"}
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Да, мы можем нанести ваш логотип или изображение на предоставленные вами изделия, если они подходят для выбранной технологии.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								{"\n"}
-								<Strong>
-									6. Вы работаете с известными брендами?
-								</Strong>
-								<br />
-								{"\n\n"}
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Да, мы сотрудничаем с ведущими мировыми брендами канцелярии, одежды и аксессуаров, гарантируя высочайшее качество продукции.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong>
-								7. Какие файлы нужны для печати или нанесения?
-							</Strong>
-							<br />
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Нам понадобятся макеты в векторных форматах (например, AI, EPS, PDF). При необходимости мы поможем адаптировать или создать дизайн.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								<Strong>
-									8. У вас есть доставка?
-								</Strong>
-								<br />
-								{"\n\n"}
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Да, мы предлагаем доставку по всей стране. Также возможен самовывоз из нашего офиса или склада.{"\n\n\n\n"}
-						</Text>
-					</Box>
-				</Box>
-				<Box padding="16px 16px 16px 16px" width="33.333%" md-width="100%">
-					<Box display="flex" flex-direction="column">
-						<Text as="h3" font="--headline3" margin="12px 0">
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								<Strong>
-									9. Можно ли посмотреть образцы перед заказом?
-								</Strong>
-								<br />
-								{"\n\n"}
-							</Strong>
-							{"\n\n"}
-						</Text>
-						<Text as="p" font="--lead" margin="12px 0" color="--darkL1">
-							Да, мы предоставляем образцы продукции и вариантов нанесения, чтобы вы могли оценить качество перед подтверждением заказа.{"\n\n\n\n"}
 						</Text>
 					</Box>
 				</Box>
@@ -1642,12 +912,17 @@ export default (() => {
 				>
 					rd.ooo@bk.ru
 				</Link>
-				<Text margin="0px 0px 0 0px" font="--headline3" color="--light" text-align="center">
+				<Text margin="0px 0px 16px 0px" font="--headline3" color="--light" text-align="center">
 					<Link href="https://yandex.com/maps/-/CDtW4YmJ" color="#ffffff" font="--headline3" target="_blank">
 						350010, Краснодар, Зиповская ул., 5Г,{" "}
 						<br />
 						микрорайон Завод Измерительных Приборов
 					</Link>
+				</Text>
+				<Text margin="0px 0px 0 0px" font="--headline3" color="--light" text-align="center">
+					Понедельник - Пятница
+					<br />
+					9:00 - 18:00
 				</Text>
 				<Box min-width="100px" min-height="100px" display="flex" margin="20px 0px 0px 0px">
 					{"      "}

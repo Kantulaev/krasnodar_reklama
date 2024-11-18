@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rekdom.netlify.app/sitemap-index.xml
+Sitemap: https://rekdomik.ru/sitemap-index.xml
