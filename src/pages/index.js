@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, LinkBox, Box, Section, Icon, Span, Button, Image, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, LinkBox, Section, Icon, Span, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -45,6 +45,7 @@ export default (() => {
 				sm-overflow-y="visible"
 				sm-justify-content="center"
 				sm-grid-column-gap="32px"
+				overflow="hidden"
 			/>
 			<Box
 				display="flex"
@@ -60,25 +61,48 @@ export default (() => {
 				md-justify-content="flex-start"
 				flex-wrap="no-wrap"
 				align-content="center"
-				width="70%"
+				width="85%"
 				overflow="hidden"
 				sm-display="flex"
 				sm-overflow="visible"
 				sm-width="85%"
 			>
 				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
-					<Text
-						margin="0"
-						md-margin="0px 0 0px 0"
-						text-align="left"
-						font="--headline2"
-						sm-margin="0px 0 0px 0"
+					<Image
+						src="https://uploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09:24:38.573Z"
 						display="block"
-						color="--red"
-						sm-font="--headline3"
-					>
-						Рекламный Дом
-					</Text>
+						width="170px"
+						sm-overflow="visible"
+						sm-width="140px"
+						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+					/>
+					<Box min-width="100px" min-height="100px">
+						<Text
+							margin="0"
+							md-margin="0px 0 0px 0"
+							text-align="left"
+							font="--headline2"
+							sm-margin="0px 0 0px 0"
+							display="block"
+							color="--darkL1"
+							sm-font="--headline3"
+						>
+							Рекламный Дом
+						</Text>
+						<Text
+							md-margin="0px 0 0px 0"
+							text-align="left"
+							font="--headline3"
+							sm-margin="0px 0 0px 0"
+							display="block"
+							color="--darkL1"
+							sm-font="--lead"
+							margin="8px 0 0 0"
+						>
+							Рекламная компания в Краснодаре
+						</Text>
+					</Box>
 				</LinkBox>
 			</Box>
 			<Box
@@ -92,7 +116,7 @@ export default (() => {
 				sm-justify-content="center"
 				lg-width="20%"
 				md-justify-content="flex-start"
-				width="10%"
+				width="15%"
 				flex-wrap="no-wrap"
 				md-width="15%"
 				sm-display="flex"
