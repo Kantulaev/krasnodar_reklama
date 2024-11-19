@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, LinkBox, Section, Icon, Span, Button, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, LinkBox, Section, Icon, Span, Button, Image, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -24,7 +24,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/673219af9710450018a442af/images/android-chrome-512x512.png?v=2024-11-18T15:34:39.197Z"} />
 			<meta name={"msapplication-TileColor"} content={"#ff0000"} />
 		</Helmet>
-		<Section quarkly-title="Header-4" sm-display="block">
+		<Section quarkly-title="Header-4" sm-display="block" sm-padding="0 0 0 0">
 			<Override
 				slot="SectionContent"
 				display="flex"
@@ -46,12 +46,12 @@ export default (() => {
 				sm-justify-content="center"
 				sm-grid-column-gap="32px"
 				overflow="hidden"
+				lg-margin="0px 49.6px 0px 24"
 			/>
 			<Box
 				display="flex"
-				padding="12px 0"
 				justify-content="flex-start"
-				align-items="flex-start"
+				align-items="center"
 				flex-direction="row"
 				sm-align-items="center"
 				sm-flex-direction="row"
@@ -66,18 +66,29 @@ export default (() => {
 				sm-display="flex"
 				sm-overflow="visible"
 				sm-width="85%"
+				margin="0px 0px 0px 16px"
+				lg-margin="0px 0px 0px 0"
 			>
-				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
-					<Image
-						src="https://uploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09:24:38.573Z"
-						display="block"
-						width="170px"
+				<LinkBox
+					flex-direction="row"
+					href="/index"
+					display="flex"
+					grid-gap="12px"
+					sm-align-items="center"
+					sm-display="flex"
+					sm-flex-direction="row"
+					sm-justify-content="flex-start"
+				>
+					<Box
+						min-width="100px"
+						min-height="100px"
 						sm-overflow="visible"
-						sm-width="140px"
-						srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/image_2024-11-19_15-23-45-removebg-preview.png?v=2024-11-19T09%3A24%3A38.573Z&quality=85&w=3200 3200w"
-						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-					<Box min-width="100px" min-height="100px">
+						sm-align-items="flex-start"
+						sm-display="flex"
+						sm-flex-direction="column"
+						sm-justify-content="center"
+						sm-flex-wrap="no-wrap"
+					>
 						<Text
 							margin="0"
 							md-margin="0px 0 0px 0"
