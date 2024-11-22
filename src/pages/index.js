@@ -333,6 +333,8 @@ export default (() => {
 				lg-grid-template-columns="repeat(2, 1fr)"
 				sm-grid-template-columns="1fr"
 				width="100%"
+				margin="0px 0px 32px 0px"
+				sm-margin="0px 0px 0px 0px"
 			>
 				<LinkBox
 					display="flex"
@@ -348,29 +350,6 @@ export default (() => {
 				>
 					<Box
 						width="100%"
-						align-items="flex-start"
-						display="flex"
-						justify-content="flex-start"
-						md-width="100%"
-						md-margin="0px 0px 0px 0px"
-						lg-width="100%"
-					>
-						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14:49:05.076Z"
-							border-radius="24px"
-							max-width="100%"
-							width="100%"
-							object-fit="cover"
-							lg-max-height="392px"
-							object-position="50% 50%"
-							sm-max-height="213px"
-							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/5860efcbe1bc26fa088a4cd22f84%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.076Z&quality=85&w=3200 3200w"
-							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-					</Box>
-					<Box
-						width="100%"
 						padding="16px 12px 16px 12px"
 						display="flex"
 						align-items="flex-start"
@@ -382,6 +361,29 @@ export default (() => {
 						<Text margin="0px 0px 8px 0px" font="--headline3" color="--light">
 							Уникальные сувениры для яркого впечатления!
 						</Text>
+					</Box>
+					<Box
+						width="100%"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						md-width="100%"
+						md-margin="0px 0px 0px 0px"
+						lg-width="100%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12:45:47.435Z"
+							border-radius="24px"
+							max-width="100%"
+							width="100%"
+							object-fit="cover"
+							lg-max-height="392px"
+							object-position="50% 50%"
+							sm-max-height="213px"
+							height="522px"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_b70f7ccb%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.435Z&quality=85&w=3200 3200w"
+							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+						/>
 					</Box>
 				</LinkBox>
 				<LinkBox
@@ -399,6 +401,23 @@ export default (() => {
 				>
 					<Box
 						width="100%"
+						padding="16px 12px 16px 12px"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						md-width="100%"
+						md-border-width="0px"
+						flex-direction="column"
+						sm-display="none"
+					>
+						<Text margin="0px 0px 8px 0px" font="--headline3" color="--light">
+							Брендируем с вниманием{" "}
+							<br />
+							к каждой детали!
+						</Text>
+					</Box>
+					<Box
+						width="100%"
 						align-items="flex-start"
 						display="flex"
 						justify-content="flex-start"
@@ -407,7 +426,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14:49:05.071Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12:45:47.442Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -415,24 +434,11 @@ export default (() => {
 							lg-max-height="392px"
 							object-position="50% 50%"
 							sm-max-height="213px"
+							overflow="hidden"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/3d91decda4228682c87c6ddb9603%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.071Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_15de452a%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.442Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
-					</Box>
-					<Box
-						width="100%"
-						padding="16px 12px 16px 12px"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						md-width="100%"
-						md-border-width="0px"
-						flex-direction="column"
-					>
-						<Text margin="0px 0px 8px 0px" font="--headline3" color="--light">
-							Брендируем с душой и вниманием к каждой детали!
-						</Text>
 					</Box>
 				</LinkBox>
 				<LinkBox
@@ -459,7 +465,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14:49:05.066Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12:45:47.449Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -468,7 +474,166 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/fa981e2512a7901aebf27a606fcf%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.066Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_fcbbfe66%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.449Z&quality=85&w=3200 3200w"
+							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+						/>
+					</Box>
+				</LinkBox>
+				<LinkBox
+					display="flex"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-wrap="wrap"
+					sm-width="100%"
+					grid-column="3 / span 1"
+					lg-grid-column="2 / span 1"
+					sm-align-self="auto"
+					sm-grid-column="auto"
+					justify-content="flex-start"
+				>
+					<Box
+						width="100%"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						md-width="100%"
+						md-margin="0px 0px 0px 0px"
+						lg-width="100%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12:45:47.455Z"
+							border-radius="24px"
+							max-width="100%"
+							width="100%"
+							object-fit="cover"
+							lg-max-height="392px"
+							object-position="50% 50%"
+							sm-max-height="213px"
+							height="522px"
+							md-padding="0px 0px 0 0px"
+							md-margin="0px 0px 32px 0px"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.40.51_25960138%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.455Z&quality=85&w=3200 3200w"
+							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+						/>
+					</Box>
+				</LinkBox>
+			</Box>
+			<Box
+				display="grid"
+				grid-template-columns="repeat(3, 1fr)"
+				grid-gap="32px"
+				lg-grid-template-columns="repeat(2, 1fr)"
+				sm-grid-template-columns="1fr"
+				width="100%"
+			>
+				<LinkBox
+					display="flex"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-wrap="wrap"
+					sm-width="100%"
+					grid-column="1 / span 1"
+					sm-align-self="auto"
+					sm-grid-column="auto"
+					justify-content="flex-start"
+				>
+					<Box
+						width="100%"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						md-width="100%"
+						md-margin="0px 0px 0px 0px"
+						lg-width="100%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12:45:47.458Z"
+							border-radius="24px"
+							max-width="100%"
+							width="100%"
+							object-fit="cover"
+							lg-max-height="392px"
+							object-position="50% 50%"
+							sm-max-height="213px"
+							height="522px"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_1e4e46cc%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.458Z&quality=85&w=3200 3200w"
+							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+						/>
+					</Box>
+				</LinkBox>
+				<LinkBox
+					display="flex"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-wrap="wrap"
+					sm-width="100%"
+					grid-column="2 / span 2"
+					lg-grid-column="2 / span 1"
+					sm-align-self="auto"
+					sm-grid-column="auto"
+					justify-content="flex-start"
+				>
+					<Box
+						width="100%"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						md-width="100%"
+						md-margin="0px 0px 0px 0px"
+						lg-width="100%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12:45:47.462Z"
+							border-radius="24px"
+							max-width="100%"
+							width="100%"
+							object-fit="cover"
+							lg-max-height="392px"
+							object-position="50% 50%"
+							sm-max-height="213px"
+							height="522px"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_cf938232%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.462Z&quality=85&w=3200 3200w"
+							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+						/>
+					</Box>
+				</LinkBox>
+				<LinkBox
+					display="flex"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-wrap="wrap"
+					lg-align-items="flex-start"
+					sm-width="100%"
+					grid-column="1 / span 2"
+					lg-grid-column="1 / span 1"
+					sm-align-self="auto"
+					sm-grid-column="auto"
+					justify-content="flex-start"
+				>
+					<Box
+						width="100%"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						md-width="100%"
+						md-margin="0px 0px 0px 0px"
+						lg-width="100%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12:45:47.470Z"
+							border-radius="24px"
+							max-width="100%"
+							width="100%"
+							object-fit="cover"
+							lg-max-height="392px"
+							object-position="50% 50%"
+							sm-max-height="213px"
+							height="522px"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_9b1669d1%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.470Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
@@ -481,6 +646,7 @@ export default (() => {
 						md-width="100%"
 						md-border-width="0px"
 						flex-direction="column"
+						sm-display="none"
 					>
 						<Text margin="0px 0px 8px 0px" font="--headline3" color="--light">
 							Логотип, который расскажет о вашем бренде!
@@ -510,7 +676,7 @@ export default (() => {
 						lg-width="100%"
 					>
 						<Image
-							src="https://uploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14:49:05.062Z"
+							src="https://uploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12:45:47.479Z"
 							border-radius="24px"
 							max-width="100%"
 							width="100%"
@@ -519,7 +685,7 @@ export default (() => {
 							object-position="50% 50%"
 							sm-max-height="213px"
 							height="522px"
-							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/45f5d079390c0349f65068b04fe3%20%281%29.jpg?v=2024-11-18T14%3A49%3A05.062Z&quality=85&w=3200 3200w"
+							srcSet="https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/673219af9710450018a442af/images/WhatsApp%20Image%202024-11-22%20at%2017.36.42_506bf18e%20%281%29.jpg?v=2024-11-22T12%3A45%3A47.479Z&quality=85&w=3200 3200w"
 							sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 						/>
 					</Box>
